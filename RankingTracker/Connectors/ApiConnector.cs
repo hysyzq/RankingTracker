@@ -1,5 +1,6 @@
 ﻿using Contract;
 using Newtonsoft.Json;
+using RankingTracker.WPF.Mappers;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -34,9 +35,8 @@ namespace RankingTracker.Connector
                     {
                         var content = apiResponse.Content.ReadAsStringAsync().Result;
                         rankingTrackResponse = JsonConvert.DeserializeObject<RankingTrackResponse>(content);
-                        
-                        // mapping
-                        return rankingTrackResponse.ToString();
+
+                        return rankingTrackResponse.ToText();
                     }
 
                 }

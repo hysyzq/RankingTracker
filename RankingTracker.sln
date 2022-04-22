@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankingTracker", "RankingTracker\RankingTracker.csproj", "{A7EDBF1F-F558-4897-824D-B61911B08DE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankingTracker.WPF", "RankingTracker\RankingTracker.WPF.csproj", "{A7EDBF1F-F558-4897-824D-B61911B08DE6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contract", "Contract\Contract.csproj", "{C287F941-09BF-4520-8D63-CEC990C96FA5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankingTracker.Api", "RankingTracker.Api\RankingTracker.Api.csproj", "{49D0D9CC-F59A-430B-846A-097F57C3FA6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankingTracker.Services", "RankingTracker.Services\RankingTracker.Services.csproj", "{750CDE87-6789-4400-98CE-8E130B4495DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{49D0D9CC-F59A-430B-846A-097F57C3FA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49D0D9CC-F59A-430B-846A-097F57C3FA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49D0D9CC-F59A-430B-846A-097F57C3FA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750CDE87-6789-4400-98CE-8E130B4495DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750CDE87-6789-4400-98CE-8E130B4495DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750CDE87-6789-4400-98CE-8E130B4495DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750CDE87-6789-4400-98CE-8E130B4495DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
