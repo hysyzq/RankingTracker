@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Contract\Contract.csproj" />
+    <ProjectReference Include="..\Contract\RankingTracker.Contract.csproj" />
   </ItemGroup>
 
 </Project>

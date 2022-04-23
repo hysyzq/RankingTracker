@@ -1,6 +1,8 @@
 ﻿using Contract;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RankingTracker.Services.RankingTrackServices.Queries;
 
 namespace RankingTracker.Api.Controllers
 {
@@ -8,17 +10,17 @@ namespace RankingTracker.Api.Controllers
     [ApiController]
     public class RankingTrackController : ControllerBase
     {
+        private readonly IMediator _mediator;
+
+        public RankingTrackController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
 
         [HttpPost]
-        public async Task<IActionResult> Track(RankingTrackRequest request)
+        public async Task<IActionResult> Track(GetRankingQuery request)
         {
-            var response = new RankingTrackResponse
-            {
-                positions = new List<int>
-                {
-                    1, 10,33
-                }
-            };
+            var response = await _mediator.Send(request);
             return Ok(response);
         }
     }
