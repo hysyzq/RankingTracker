@@ -19,13 +19,11 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="10.4.0" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="10.4.0" />
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Contract\RankingTracker.Contract.csproj" />
     <ProjectReference Include="..\RankingTracker.Services\RankingTracker.Services.csproj" />
   </ItemGroup>
 

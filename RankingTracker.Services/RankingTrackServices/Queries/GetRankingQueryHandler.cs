@@ -1,6 +1,6 @@
-﻿using Contract;
-using MediatR;
+﻿using MediatR;
 using Microsoft.Extensions.Logging;
+using RankingTracker.Contract;
 using RankingTracker.Services.GoogleRankingService;
 
 namespace RankingTracker.Services.RankingTrackServices.Queries

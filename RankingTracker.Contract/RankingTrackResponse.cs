@@ -1,4 +1,4 @@
-﻿namespace Contract
+﻿namespace RankingTracker.Contract
 {
     public class RankingTrackResponse
     {

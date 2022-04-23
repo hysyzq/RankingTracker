@@ -1,7 +1,9 @@
+using FluentValidation;
 using FluentValidation.AspNetCore;
 using MediatR;
 using RankingTracker.Services.GoogleRankingService;
 using RankingTracker.Services.RankingTrackServices.Queries;
+using RankingTracker.Services.RankingTrackServices.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddFluentValidation();
 builder.Services.AddMediatR(typeof(GetRankingQueryHandler).Assembly);
 builder.Services.AddScoped<IGoogleRankingService, GoogleRankingService>();
+builder.Services.AddScoped<IValidator<GetRankingQuery>, GetRankingQueryValidator>(); ;
 
 
 // config

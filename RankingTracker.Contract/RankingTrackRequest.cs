@@ -1,4 +1,4 @@
-﻿namespace Contract
+﻿namespace RankingTracker.Contract
 {
     // contract can export to nuget allow client/web to use.
     public class RankingTrackRequest

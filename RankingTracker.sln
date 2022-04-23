@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingTracker.WPF", "RankingTracker\RankingTracker.WPF.csproj", "{A7EDBF1F-F558-4897-824D-B61911B08DE6}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingTracker.Contract", "Contract\RankingTracker.Contract.csproj", "{C287F941-09BF-4520-8D63-CEC990C96FA5}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingTracker.Api", "RankingTracker.Api\RankingTracker.Api.csproj", "{49D0D9CC-F59A-430B-846A-097F57C3FA6A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingTracker.Services", "RankingTracker.Services\RankingTracker.Services.csproj", "{750CDE87-6789-4400-98CE-8E130B4495DE}"
@@ -15,20 +11,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingTracker.Model", "Ran
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankingTracker.UnitTests", "RankingTracker.UnitTests\RankingTracker.UnitTests.csproj", "{97F73071-7FF4-4877-A1B3-FEEB73655A04}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{04987D10-2030-48FB-8D3E-AC8672E641C0}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingTracker.Contract", "RankingTracker.Contract\RankingTracker.Contract.csproj", "{1903D71B-6115-4D0C-AFEB-998BD666EB19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingTracker.WPF", "RankingTracker.Wpf\RankingTracker.WPF.csproj", "{2FC3E94D-ED2A-4DF7-9602-E6243B4CBF2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A7EDBF1F-F558-4897-824D-B61911B08DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7EDBF1F-F558-4897-824D-B61911B08DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7EDBF1F-F558-4897-824D-B61911B08DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7EDBF1F-F558-4897-824D-B61911B08DE6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C287F941-09BF-4520-8D63-CEC990C96FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C287F941-09BF-4520-8D63-CEC990C96FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C287F941-09BF-4520-8D63-CEC990C96FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C287F941-09BF-4520-8D63-CEC990C96FA5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{49D0D9CC-F59A-430B-846A-097F57C3FA6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{49D0D9CC-F59A-430B-846A-097F57C3FA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49D0D9CC-F59A-430B-846A-097F57C3FA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +43,14 @@ Global
 		{97F73071-7FF4-4877-A1B3-FEEB73655A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97F73071-7FF4-4877-A1B3-FEEB73655A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97F73071-7FF4-4877-A1B3-FEEB73655A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1903D71B-6115-4D0C-AFEB-998BD666EB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1903D71B-6115-4D0C-AFEB-998BD666EB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1903D71B-6115-4D0C-AFEB-998BD666EB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1903D71B-6115-4D0C-AFEB-998BD666EB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC3E94D-ED2A-4DF7-9602-E6243B4CBF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC3E94D-ED2A-4DF7-9602-E6243B4CBF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC3E94D-ED2A-4DF7-9602-E6243B4CBF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC3E94D-ED2A-4DF7-9602-E6243B4CBF2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
