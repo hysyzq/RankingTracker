@@ -23,7 +23,7 @@ namespace RankingTracker.Services.RankingTrackServices.Queries
             var googelResults = await _googleRankingService.GetRankingSearchResult(request.SearchText);
 
             var findTargetedUrl = googelResults.Rankings
-                                        .Where(t=>t.Key == request.SearchUrl)
+                                        .Where(t=>t.Key.Contains(request.SearchUrl.ToLower()))
                                         .Select(t=>t.Rank).ToList();
 
             return new RankingTrackResponse

@@ -1,23 +1,45 @@
 ﻿using RankingTracker.Model.Domain;
+using System.Text.RegularExpressions;
 
 namespace RankingTracker.Services.GoogleRankingService
 {
     public static class GoogleContentMapper
     {
-        public static RankingSearchHistory ToRankingSearchHistory(this string content, string key)
+
+        private static Regex linkParser = new Regex(@"\b(?:https?://|www\.)\S+\b", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+        private static Regex contentParser = new Regex(@"/url\?q=\b(?:https?://|www\.)[a-zA-Z0-9._-]+\b", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+        public static string ExtractUrlLower(this string content)
         {
-            return new RankingSearchHistory
+            List<string> urls = new List<string>();
+            foreach (Match m in linkParser.Matches(content))
             {
-                Id = 1,
-                SearchDateTimeOffset = DateTimeOffset.Now,
-                SearchKey = key,
-                Rankings = new List<Ranking> { 
-                    new Ranking{Id = 1, Rank = 1, Key = "www.smokeball.com.au" },
-                    new Ranking{Id = 2, Rank = 2, Key = "www.apple.com" },
-                    new Ranking{Id = 3, Rank = 3, Key = "www.smokeball.com.au" },
-                    new Ranking{Id = 4, Rank = 4, Key = "www.facebook.com" },
-                }
-            };
+                urls.Add(m.Value);
+            }
+            return urls[0].ToLower() ?? "";
         }
+
+
+        public static RankingSearchHistory ToRankingSearchHistory(this string content, string keyword)
+        {
+            RankingSearchHistory result = new RankingSearchHistory
+            {
+                SearchDateTimeOffset = DateTimeOffset.Now,
+                SearchKey = keyword
+            };
+            int rank = 0;
+            foreach (Match m in contentParser.Matches(content))
+            {
+                result.Rankings.Add(new Ranking
+                {
+                    Key = m.Value.Substring(1),
+                    Rank = ++rank
+                });
+            }
+
+            return result;
+        }
+
     }
 }
