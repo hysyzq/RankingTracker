@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingTracker.Api", "Ranki
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingTracker.Services", "RankingTracker.Services\RankingTracker.Services.csproj", "{750CDE87-6789-4400-98CE-8E130B4495DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankingTracker.Model", "RankingTracker.Model\RankingTracker.Model.csproj", "{B3432E61-246E-43B0-A1B8-83D465776A29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RankingTracker.Model", "RankingTracker.Model\RankingTracker.Model.csproj", "{B3432E61-246E-43B0-A1B8-83D465776A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankingTracker.UnitTests", "RankingTracker.UnitTests\RankingTracker.UnitTests.csproj", "{97F73071-7FF4-4877-A1B3-FEEB73655A04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B3432E61-246E-43B0-A1B8-83D465776A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3432E61-246E-43B0-A1B8-83D465776A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3432E61-246E-43B0-A1B8-83D465776A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F73071-7FF4-4877-A1B3-FEEB73655A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F73071-7FF4-4877-A1B3-FEEB73655A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F73071-7FF4-4877-A1B3-FEEB73655A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F73071-7FF4-4877-A1B3-FEEB73655A04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

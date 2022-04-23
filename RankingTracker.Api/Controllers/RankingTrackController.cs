@@ -1,6 +1,4 @@
-﻿using Contract;
-using MediatR;
-using Microsoft.AspNetCore.Http;
+﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using RankingTracker.Services.RankingTrackServices.Queries;
 
@@ -20,6 +18,7 @@ namespace RankingTracker.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Track(GetRankingQuery request)
         {
+            // mediator CQRS
             var response = await _mediator.Send(request);
             return Ok(response);
         }

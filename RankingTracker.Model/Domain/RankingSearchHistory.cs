@@ -1,5 +1,6 @@
 ﻿namespace RankingTracker.Model.Domain
 {
+    // can have repository/DB to store the records for reporting purpose.
     public class RankingSearchHistory
     {
         public int Id { get; set; }

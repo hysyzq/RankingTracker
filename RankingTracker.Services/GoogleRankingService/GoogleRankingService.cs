@@ -22,6 +22,7 @@ namespace RankingTracker.Services.GoogleRankingService
         {
             try
             {
+                //this just an option to use Selenium to extract data if any complex requirment like invoke javascript.
                 if (_googleOptions.UseChromeDriver)
                 {
                     return await GetViaChromeDriver(keyword);
